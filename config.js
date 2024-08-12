@@ -5,7 +5,7 @@ connect.then(()=>{
     console.log('connected successful to  database')
 })
 connect.catch(()=>{
-    console.log('connectde failed to user database')
+    console.log('connectde failed to  database')
 })
 
 const loginShema = new mongoose.Schema({
