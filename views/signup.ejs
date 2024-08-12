@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<style>
+
+div{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: relative;
+    left:40%;
+    background-color: antiquewhite;
+    padding:20px;
+    border-radius: 10px;
+
+}
+div form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px;
+}
+div form input{
+    padding:10px;
+    border-radius: 10px;
+    border:none;
+    margin:10px;
+}
+h2{
+    text-align: center;
+}
+button{
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;  
+    border-radius: 10px;
+    color: aliceblue;
+    border:none;
+
+}
+</style>
+<body>
+    
+
+    <div class="container">
+        <h2>
+            signup
+        </h2>
+        <form action="/signup" method="post">
+           <label for="name">Name</label>
+           <input type="text" id="name" placeholder="enter username"  name="username" required>
+           <label for="password">password</label>
+           <input type="password" id="password" placeholder="enter password"  name="password" required>
+       <button type="submit">Signup</button>
+        </form>
+        <p>already have accountt <a href="/login">login</a> </p>
+    </div>
+</body>
+</html>
